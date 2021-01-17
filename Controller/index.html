@@ -20,17 +20,17 @@
         <h2>Hãy nhập thông tin của bạn!!!</h2>
     </div>
     <div class="form_inform">
-        <form action="../View/inform.php" method="POST">
-            <label for="f_name">Họ và tên</label><br>
-            <input type="text" id="f_name" name="f_name"><br>
+        <form action="../Model/inform.php" method="POST">
+            <label for="name">Họ và tên</label><br>
+            <input type="text" id="name" name="name"><br>
             <label for="date">Ngày sinh</label><br>
             <input type="date" id="date" name="date"><br><br>
             <label for="sexual" >Giới tính</label><br>
-            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" id="male" name="gender" value="Nam">
             <label for="male" >Nam</label>
-            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="female" name="gender" value="Nữ">
             <label for="female" >Nữ</label>
-            <input type="radio" id="diff" name="gender" value="diff">
+            <input type="radio" id="diff" name="gender" value="Khác">
             <label for="diff" >Khác</label><br>
             <input type="submit" value="Xác nhận">
         </form>
