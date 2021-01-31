@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="utf-8" lang="vi" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" href="/assets/stylesheets/style.css">
+     <title> Hồ sơ blockchain </title>
+</head>
+<body>
+    <div class="heading">
+        <h1> ON_Blockchain</h1>
+        <h2>Mạng xã hội Blockchain</h2><br><br>
+        <h2>Đăng ký</h2>
+    </div>
+    <div class="form_inform">
+        <form action="../model/register.php" method="POST">
+            <label for="first_name">Họ của bạn là?</label><br>
+            <input type="text" id="first_name" name="first_name" required placeholder="Nhập Họ của bạn"><br>
+            <label for="last_name">Tên của bạn là?</label><br>
+            <input type="text" id="last_name" name="last_name" required placeholder="Nhập Tên của bạn"><br>
+            <label for="date">Ngày sinh:</label><br>
+            <input placeholder="DD-MM-YYYY" value="" min="1950-01-01" max="2030-12-31" id="date" required><br><br>
+            <label for="sexual" >Giới tính: </label><br>
+            <input type="radio" id="male" name="gender" value="Nam">
+            <label for="male" >Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female" >Nữ</label>
+            <input type="radio" id="diff" name="gender" value="Khác">
+            <label for="diff" >Khác</label><br>
+            <input type="submit" value="Xác nhận">
+        </form>
+    </div>
